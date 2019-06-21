@@ -1,3 +1,7 @@
-<p>
-  {{Response}}
-</p>
+<p>Parsing the JSON Gives</p>
+<p>Email: {{Response?.Email}}</p>
+
+<div>Roles: 
+<span *ngFor="let item of Response?.Roles">{{item}}</span>
+</div>
+<div *ngIf="Response?.Active">Active</div>

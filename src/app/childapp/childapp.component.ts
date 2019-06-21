@@ -6,10 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./childapp.component.css']
 })
 export class ChildappComponent implements OnInit {
-  @Input() Response: string;
+  @Input() Response: any;
   constructor() { }
 
   ngOnInit() {
+    console.log('Child Active');
   }
 
 }
