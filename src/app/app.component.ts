@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
 
   message = 'Please Parse My JSON';
   responseMessage: any;
-  reqUrl = 'http://localhost:8080/';
+  reqUrl = 'http://localhost:8080/api';
 
   constructor(private http: HttpClient) {}
 
